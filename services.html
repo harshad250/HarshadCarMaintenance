@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Services - CarCare Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <span>CarCare Pro</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="about.html">About</a>
+                <a href="auth.html" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-steps">
+            <h2>Quick 3-step booking</h2>
+            <div class="steps-container">
+                <div class="step-content">
+                    <div class="step">
+                        <i class="fas fa-list-ul"></i>
+                        <p>Choose the required service</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Enter your locality & contact details</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-tools"></i>
+                        <p>Leave the rest to our service experts</p>
+                    </div>
+                </div>
+                <div class="steps-image">
+                    <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/steps.png" alt="Booking Steps">
+                </div>
+            </div>
+        </section>
+
+        <section class="service-booking">
+            <div class="service-details">
+                <h2>Express Car Service</h2>
+                <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/service-banner.jpg" alt="Express Car Service">
+                
+                <div class="whats-included">
+                    <h3>What's Included</h3>
+                    <div class="service-items">
+                        <div class="service-item">
+                            <span class="number">01</span>
+                            <p>Digital Health Check-up</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="number">02</span>
+                            <p>Engine Oil Top up</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="number">03</span>
+                            <p>Coolant Top Up</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="number">04</span>
+                            <p>Brake Oil Top Up</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="number">05</span>
+                            <p>Complete Car Wash and Interior vacuum</p>
+                        </div>
+                        <div class="service-item">
+                            <span class="number">06</span>
+                            <p>Tyre Polish, Dashboard Polish & more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-form">
+                <h3>Book a Service</h3>
+                <form id="serviceForm">
+                    <input type="text" placeholder="Pincode" required>
+                    <input type="text" placeholder="Name" required>
+                    <div class="mobile-verification">
+                        <input type="tel" placeholder="Mobile" required>
+                        <button type="button" class="verify-btn">Verify</button>
+                    </div>
+                    <input type="text" id="otp" placeholder="Enter OTP" style="display: none;">
+                    <select required>
+                        <option value="">Make & Model</option>
+                        <option value="swift">Maruti Swift</option>
+                        <option value="i20">Hyundai i20</option>
+                        <option value="baleno">Maruti Baleno</option>
+                    </select>
+                    <div class="consent">
+                        <input type="checkbox" id="whatsapp-consent">
+                        <label for="whatsapp-consent">I agree to receive updates on WhatsApp</label>
+                    </div>
+                    <div class="price">₹1399*</div>
+                    <button type="submit" class="book-btn">SELECT DATE</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2>Our Advantages</h2>
+            <div class="advantage-items">
+                <div class="advantage-item">
+                    <img src="path-to-savings-icon.png" alt="Savings">
+                    <p>Up to 50% savings</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="path-to-technician-icon.png" alt="Technicians">
+                    <p>Trained technicians</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="path-to-pickup-icon.png" alt="Pickup">
+                    <p>Free Pick-up & Drop</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="path-to-parts-icon.png" alt="Parts">
+                    <p>Certified parts for replacement</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="path-to-tracking-icon.png" alt="Tracking">
+                    <p>Real-time tracking</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What's included in Pricing</h3>
+                <p>Pricing includes complete car health check-up, 100ml of engine oil top-up, 50ml of coolant fluid top-up, complete exterior foam wash and interior vacuuming along with free pick-up & drop. All prices mentioned on the website are exclusive of taxes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Time for Delivery</h3>
+                <div class="faq-content">
+                    <!-- Content will be shown/hidden via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> +91 9003251754</p>
+                <p><i class="fas fa-envelope"></i> hello@carcarepro.com</p>
+                <p>Mon to Sat 9:30 AM to 6:30 PM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CarCare Pro</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fuel Price Ticker -->
+    <div class="fuel-price-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <div class="ticker-item">
+                    <i class="fas fa-gas-pump"></i>
+                    <span class="fuel-type">Petrol:</span>
+                    <span class="fuel-price">₹102.63/L</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-truck"></i>
+                    <span class="fuel-type">Diesel:</span>
+                    <span class="fuel-price">₹89.79/L</span>
+                </div>
+                <div class="ticker-item">
+                    <i class="fas fa-charging-station"></i>
+                    <span class="fuel-type">CNG:</span>
+                    <span class="fuel-price">₹85.50/kg</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3 id="user-name">Welcome User</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#overview" class="active"><i class="fas fa-home"></i> Overview</a>
+                <a href="#vehicles"><i class="fas fa-car"></i> My Vehicles</a>
+                <a href="#services"><i class="fas fa-tools"></i> Services</a>
+                <a href="#history"><i class="fas fa-history"></i> History</a>
+                <a href="#notifications"><i class="fas fa-bell"></i> Notifications</a>
+                <a href="index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="overview" class="dashboard-section active">
+                <h2>Dashboard Overview</h2>
+                <div class="featured-car">
+                    <img src="car-image-1.jpg" alt="Your Car" class="car-image">
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Vehicle Status</h3>
+                        <p>Good Condition</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-oil-can"></i>
+                        <h3>Next Service</h3>
+                        <p>In 15 days</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-history"></i>
+                        <h3>Last Service</h3>
+                        <p>30 days ago</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Health Score</h3>
+                        <p>92/100</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vehicles" class="dashboard-section">
+                <h2>My Vehicles</h2>
+                <div class="vehicle-list">
+                    <div class="vehicle-card">
+                        <img src="car-image-1.jpg" alt="Vehicle">
+                        <div class="vehicle-info">
+                            <h3>Loading...</h3>
+                            <div class="vehicle-details">
+                                <p class="vehicle-number">Loading...</p>
+                                <p class="vehicle-status">Status: Active</p>
+                            </div>
+                            <button class="service-btn">Book Service</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="dashboard-section">
+                <h2>Available Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-oil-can"></i>
+                        <h3>Oil Change</h3>
+                        <p>From ₹1399</p>
+                        <div class="provider-select">
+                            <input type="text" placeholder="Enter provider username" class="provider-username">
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-car-crash"></i>
+                        <h3>Dent Removal</h3>
+                        <p>From ₹2999</p>
+                        <div class="provider-select">
+                            <input type="text" placeholder="Enter provider username" class="provider-username">
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>AC Service</h3>
+                        <p>From ₹1699</p>
+                        <div class="provider-select">
+                            <input type="text" placeholder="Enter provider username" class="provider-username">
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history" class="dashboard-section">
+                <h2>Service History</h2>
+                <div class="history-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Service</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>25 Jan 2025</td>
+                                <td>Oil Change</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td>₹1399</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

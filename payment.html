@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - CarCare Pro</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-summary">
+            <h2>Payment Summary</h2>
+            <div class="service-details">
+                <div class="service-item">
+                    <span>Service Type</span>
+                    <span id="service-type">Express Car Service</span>
+                </div>
+                <div class="service-item">
+                    <span>Base Price</span>
+                    <span>₹1399.00</span>
+                </div>
+                <div class="service-item">
+                    <span>GST (18%)</span>
+                    <span>₹251.82</span>
+                </div>
+                <div class="service-item total">
+                    <span>Total Amount</span>
+                    <span>₹1650.82</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            
+            <div class="payment-option gpay active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Pay_Logo_%282020%29.svg/1200px-Google_Pay_Logo_%282020%29.svg.png" alt="Google Pay">
+                <span>Google Pay</span>
+            </div>
+
+            <div class="payment-form">
+                <div class="input-group">
+                    <label for="upi-id">UPI ID / Phone Number</label>
+                    <input type="text" id="upi-id" placeholder="Enter UPI ID or Phone Number">
+                </div>
+
+                <button id="pay-button" class="pay-button">
+                    <i class="fas fa-lock"></i>
+                    Pay Securely ₹1650.82
+                </button>
+
+                <div class="secure-badges">
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Secure</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Encrypted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-footer">
+            <p>By proceeding with the payment, you agree to our <a href="#">Terms & Conditions</a></p>
+        </div>
+    </div>
+
+    <!-- Payment Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h3>Payment Successful!</h3>
+            <p>Your service has been booked successfully.</p>
+            <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

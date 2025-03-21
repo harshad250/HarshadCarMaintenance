@@ -1,0 +1,20 @@
+{
+  "name": "car-service-app",
+  "version": "1.0.0",
+  "description": "Car Service Booking Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "cors": "^2.8.5",
+    "firebase-admin": "^10.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
